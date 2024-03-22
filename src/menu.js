@@ -1,3 +1,6 @@
+import lasagnaImage from './assets/lasagna.jpg';
+import guacamoleImage from './assets/guacamole.jpg';
+
 export function menu() {
     const contentDiv = document.querySelector("#content");
 
@@ -10,7 +13,7 @@ export function menu() {
 
     const lasagna = document.createElement("img");
     lasagna.classList.add("image");
-    lasagna.src = "../src/assets/lasagna.jpg";
+    lasagna.src = lasagnaImage
     lasagna.alt = "image of lasagna";
     contentDiv.appendChild(lasagna);
 
@@ -21,7 +24,7 @@ export function menu() {
 
     const guacamole = document.createElement("img");
     guacamole.classList.add("image");
-    guacamole.src = "../src/assets/guacamole.jpg";
+    guacamole.src = guacamoleImage;
     guacamole.alt = "image of guacamole";
     contentDiv.appendChild(guacamole);
 
