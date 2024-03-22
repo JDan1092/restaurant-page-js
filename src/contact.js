@@ -1,3 +1,7 @@
+import phoneImage1 from './assets/phone.jpg';
+import emailImage from './assets/email.jpg';
+import mailImage from './assets/mail.jpg';
+
 export function contact() {
     const contentDiv = document.querySelector("#content");
 
@@ -10,7 +14,7 @@ export function contact() {
 
     const phoneImage = document.createElement("img")
     phoneImage.classList.add("image");
-    phoneImage.src = "../src/assets/phone.jpg";
+    phoneImage.src = phoneImage1;
     phoneImage.alt = "image of phone";
     contentDiv.appendChild(phoneImage);
 
@@ -21,7 +25,7 @@ export function contact() {
 
     const email = document.createElement("img");
     email.classList.add("image");
-    email.src = "../src/assets/email.jpg";
+    email.src = emailImage;
     email.alt =  "image of email";
     contentDiv.appendChild(email);
 
@@ -32,7 +36,7 @@ export function contact() {
 
     const topImage = document.createElement("img");
     topImage.classList.add("image");
-    topImage.src = "../src/assets/mail.jpg";
+    topImage.src = mailImage;
     topImage.alt = "image of mailing address";
     contentDiv.appendChild(topImage);
 
